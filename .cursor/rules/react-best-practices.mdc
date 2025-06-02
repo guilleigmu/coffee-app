@@ -1,0 +1,53 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# React Best Practices
+
+## Component Structure
+- Components should be in their own files under `src/components/`
+- Use functional components with hooks instead of class components
+- Keep components small and focused on a single responsibility
+- Extract reusable logic into custom hooks under `src/hooks/`
+
+## State Management
+- Use local state (`useState`) for component-specific state
+- Use context (`useContext`) for shared state across components
+- Consider Redux only for complex global state
+- Keep state as close as possible to where it's used
+
+## Performance
+- Use `React.memo()` for expensive components that receive the same props
+- Implement `useCallback()` for function props passed to memoized components
+- Use `useMemo()` for expensive computations
+- Avoid inline object/array creation in render methods
+
+## Code Organization
+- Group related components in feature folders
+- Keep utility functions in `src/utils/`
+- Store constants in `src/constants/`
+- Place API calls in `src/services/`
+
+## TypeScript Integration
+- Use TypeScript for all new components
+- Define prop types using interfaces
+- Export types from `src/types/`
+- Avoid using `any` type
+
+## Testing
+- Write tests for components in `__tests__` directories
+- Use React Testing Library for component tests
+- Test user interactions, not implementation details
+- Keep test files close to the components they test
+
+## File Naming
+- Use PascalCase for component files (e.g., `Button.tsx`)
+- Use camelCase for utility files (e.g., `formatDate.ts`)
+- Add `.test.tsx` suffix for test files
+
+## Dependencies
+- Keep dependencies up to date
+- Use exact versions in package.json
+- Document why non-standard dependencies are needed
+- Prefer official React packages over third-party alternatives
