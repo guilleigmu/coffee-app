@@ -4,7 +4,7 @@ import PrimaryButton from "./ui/primary-button";
 import { submitForm } from "@/lib/submit";
 import { useState } from "react";
 
-export default function JokeSection({
+export default function CoffeeSection({
   coffeeImage: initialCoffeeImage,
 }: {
   coffeeImage: string;
