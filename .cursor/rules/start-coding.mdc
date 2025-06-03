@@ -1,0 +1,8 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+You are given a linear issue. Check the description. It will have a summary, an aproximate location in the codebase where the feature should take place, and a goal.
+
+Analyze the whole information and elaborate a development plan. Thanks
